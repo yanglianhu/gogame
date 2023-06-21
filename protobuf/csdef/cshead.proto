@@ -1,0 +1,11 @@
+syntax = "proto3";
+option go_package = "./;cs";
+package cs;
+
+message CSHead
+{
+    uint32 CmdId = 1;//命令字
+    uint32 SeqId = 2;//递增的序列号
+    uint32 RetCode = 3;//错误码
+    uint64 Uid = 4;//玩家ID，由游戏内生成
+}
