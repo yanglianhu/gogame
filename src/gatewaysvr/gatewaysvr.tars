@@ -1,0 +1,9 @@
+module TarsPkg
+{
+
+interface GatewaySvrInterface
+{
+    int test(int ServerId,out int ErrorCode);
+};
+
+};

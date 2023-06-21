@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./;ss";
+package ss;
+
+message SSHead {
+    uint32 CmdId = 1;//命令字
+    uint32 SeqId = 2;//递增的序列号
+    uint32 RetCode = 3;//错误码
+    uint64 Src = 4;//源服务器ID
+    uint64 Dst = 5;//目标服务器ID
+    uint64 Uid = 6;//玩家ID，由游戏内生成
+    uint32 SubCmdId = 7;// 子命令字，转发协议时才填充
+    uint32 Flag = 8;// 透传标识 
+}
